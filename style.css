@@ -1,20 +1,28 @@
 /* contents */
 body {
-    background-color: #eeeeee;
+    background-color: #dcdddd;
     position: absolute;
     left: 50%;
     top: 30%;
     transform: translate(-70%, -50%);
 }
+
+/* width, height 100%
+display: flex;
+justify-content: center
+부모요소가 넓으면 그림자가 나온다. */
+
+/* overflow:hidden;
+contents 흘러나옴 없애기 */
 .wrapper {
     width: 800px;
     margin: 0 auto;
     text-indent: 10px;
     text-align: left;
+    border-radius: 50px;
+    overflow: hidden;
 }
 .title {
-    border-top-left-radius: 50px;
-    border-top-right-radius: 50px;
     box-shadow: 0px 0px 20px #a1a1a1;
     background-color: white;
     padding: 50px;
@@ -22,13 +30,11 @@ body {
 }
 .wrapper h1 {
     font-size: 50px;
-    color: #ff1493;
+    color: #ff1393;
 }
 .list {
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px;
     box-shadow: 0px 0px 20px #a1a1a1;
-    background-color: #e2e2e2;
+    background-color: #efefef;
     padding: 50px;
 }
 .list p {
@@ -39,6 +45,8 @@ body {
     border-radius: 10px;
 }
 .list .learn {
-    border-color: #1835D0;
-    color: #1835D0;
+    border-color: #1e91ff;
+    color: #1e91ff;
+    background-image: url(/images/check.png);
+    background-repeat: no-repeat;
 }
