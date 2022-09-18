@@ -1,3 +1,8 @@
+/* Reset */
+h1, p {
+    margin: 0;
+    padding: 0;
+}
 /* contents */
 body {
     background-color: #dcdddd;
@@ -15,33 +20,39 @@ justify-content: center
 /* overflow:hidden;
 contents 흘러나옴 없애기 */
 .wrapper {
-    width: 800px;
-    margin: 0 auto;
-    text-indent: 10px;
+    width: 900px;
     text-align: left;
-    border-radius: 50px;
     overflow: hidden;
 }
 .title {
-    box-shadow: 0px 0px 20px #a1a1a1;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    box-shadow: #dddddd 0px 10px 10px 10px;
     background-color: white;
-    padding: 50px;
+    padding-top: 70px;
+    padding-bottom: 70px;
     display: flow-root;
 }
-.wrapper h1 {
-    font-size: 50px;
+.title h1 {
+    font-size: 55px;
     color: #ff1393;
+    text-indent: 50px;
+    font-weight: bold;
+    border-left: #ff1393 solid 20px;
 }
 .list {
-    box-shadow: 0px 0px 20px #a1a1a1;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    box-shadow: #dddddd 0px -10px 10px 0px;
     background-color: #efefef;
     padding: 50px;
 }
 .list p {
-    font-size: 30px;
+    font-size: 35px;
     background-color: white;
     padding: 20px;
-    border: #a1a1a1 7px solid;
+    margin: 30px;
+    border: #a1a1a1 10px solid;
     border-radius: 10px;
 }
 .list .learn {
@@ -49,4 +60,5 @@ contents 흘러나옴 없애기 */
     color: #1e91ff;
     background-image: url(/images/check.png);
     background-repeat: no-repeat;
+    background-position: right;
 }
